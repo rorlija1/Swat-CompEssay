@@ -1,0 +1,45 @@
+Rowan Orlijan-Rhyne
+May 2025
+Swarthmore College
+
+This folder contains the code and files necessary to facilitate the smooth running of a computational essay/report of the work I have engaged in this spring. Enjoy!
+
+NOTE: I use Jupyter Notebooks and Anaconda Navigator to run the code for this report. If you have trouble with this, Google Colab is an alternative platform to run the code, although some tweaks may have to be made to the file structure. See this README from Amy Graves if you would like to use Colab:
+(https://drive.google.com/file/d/1PxWVuvUNb8W5ccv99oNBTrV5K6s3Y2h_/view?usp=sharing)
+
+Summary of contents of this directory:
+	- __pycache__ - automatically generated folder from importing custom dataset Python code
+	- cached_data - folder written and overwritten by GNN during training
+	- customDataset.py - file that contains code to pass the processed data to the GNN
+	- displacement_graph_input - contains Snapshot_1.data files for two different MD time step displacement predictions
+	- gnn versions - contains (i) GNN with train and saved model (elementary GNN version which saves the model state and records actual and predicted values for training as well as validation) (ii) EMA/early stop/norm (most advanced GNN version from this semester, or the one with the most bells and whistles)
+	- images - contains all images rendered in the notebook as well as displacement plots and movies created by the notebook for studying the dataset
+	- MD_Data - contains all LAMMPS dump files I have received
+	- pre_processors - contains a pre-processor for displacement and for neighbors tasks with the ability to import functions from the pre-processor into another environment
+	- README - you\'92re doing it!
+	- html version:  static version of the notebook that shows output (images only render when the html is opened in the final_report_rowan directory)
+	- Jupyter Notebook - the computational essay
+	- saved_model_states - contains the best model.pkl files for 3 different models after having been trained for 500 epochs as well as the learning rates for the displacement task
+
+Other scripts and data files that can be found on Google Drive:
+	- Data_Files > Rowan\'92s data and figures > output contains all of the GNN output and code on my local environment as of May 13 2025. This includes actual/predicted values, learning rates, saved models, figures, plotting scripts, and params text files which describe the choice of hyperparameters for the model
+
+My software versions are as follows:
+
+	Python - 3.12.2
+	PyTorch - 0.5.1
+	Numpy - 1.26.4
+
+To check the version of a package which you are running with Anaconda Navigator, run
+conda list [insert package]
+
+To install these for general use, in Spyder, run
+!pip install [insert package]
+
+\f1 \cf0 !pip install [insert package]
+\f0 \
+\
+To install these for use in Jupyter Notebook (using Anaconda Navigator), run
+conda install [insert package]
+
+Note: Some of the plots included in the essay are generated using the Julia code in this folder, as opposed to Python code. If you're feeling curious and would like to learn a bit about a new programming language, please take a gander and use my plotting code for your purposes! Otherwise, I encourage you to make use of Amy Graves and/or Siddhant Ranka's Python plotting scripts. }
