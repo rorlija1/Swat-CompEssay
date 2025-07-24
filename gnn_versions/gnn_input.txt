@@ -1,0 +1,19 @@
+This file should be edited by the user by changing the contents of the indicated lines.
+
+Please describe the task you are training on:
+Displacement_MD0_dt=50000
+
+Where can you find the Snapshot file which you have put in the graph_inputdata directory for training?
+graph_inputdata/displacement_data/relative to MD0/Snapshot_1_MD0_dT=50000_train=0.9.graphdata
+
+Enter desired name of subdirectory for results: (will be created as "output_[your name]")
+dropout_0.25
+
+Would you like to resume training from a .pkl file? (yes/no)
+no
+Would you like to use bestmodel.pkl (1) or savedmodel.pkl (2)?
+2
+How many epochs would you like to execute right now?
+1500
+I would like to write a savedmodel.pkl checkpoint at each epoch:
+True
